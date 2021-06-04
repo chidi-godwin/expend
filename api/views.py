@@ -20,6 +20,11 @@ class BankStatementDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = BankStatementSerializer
 
 
+class BankStatementCreate(generics.CreateAPIView):
+    queryset = BankStatement.objects.all()
+    serializer_class = BankStatementSerializer
+
+
 class PredictAPIView(APIView):
 
     def get(self, request, pk):
