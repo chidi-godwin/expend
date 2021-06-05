@@ -16,7 +16,7 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
-    DEBUG=(bool, True)
+    DEBUG=(bool, False)
 )
 environ.Env.read_env()
 # Quick-start development settings - unsuitable for production
