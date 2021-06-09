@@ -9,7 +9,7 @@ class User(AbstractUser):
 
 
 class BankStatement(models.Model):
-    user = models.OneToOneField(User, models.CASCADE, related_name="bank_statement")
+    id = models.OneToOneField(User, models.CASCADE, related_name="bank_statement", primary_key=True)
     data = models.JSONField()
 
     def __str__(self):
