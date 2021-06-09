@@ -13,4 +13,4 @@ class BankStatement(models.Model):
     data = models.JSONField()
 
     def __str__(self):
-        return f"Bank Statement: {self.user.username}"
+        return f"Bank Statement: {self.id.username}"
