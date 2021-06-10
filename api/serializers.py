@@ -14,7 +14,7 @@ class BankStatementSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = BankStatement
-        fields = ['id', 'user', 'data']
+        fields = ['id', 'data']
 
 
 class Prediction:
